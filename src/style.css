@@ -1,0 +1,93 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .color1 {
+    color: greenyellow;
+  }
+  
+  .color2 {
+    color: #534858;
+  }
+  
+  .bgcolor1 {
+    background: #181D31;
+  }
+  
+  .bgcolor2 {
+    background: #ffb30e;
+  }
+  
+  .card-user {
+    overflow: hidden;
+  }
+  
+  .user-card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .user-card-image1 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    height: 28%;
+  }
+  
+  .user-card-image2 {
+    display: block;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+  }
+  
+  .food-card-image {
+    border-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ea345a;
+    background-color: white;
+  }
+  
+  .food-card {
+    background-color: #fefaf1;
+  }
+  
+  .carousel-item {
+    height: 34rem;
+    position: relative;
+    background: #202439;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* tambahan */
+  .bg-addfood{
+    background-color: #FFEEDD;
+  }
+  .bg-alluser{
+    background-color: #434242;
+  }
+  .tc1{
+    color: #ffffff;
+  }
+  .nob{
+    border: 0px;
+  }
+  .bg1{
+    background-color:whitesmoke ;
+  }
+  .bg2{
+    background-color:#ea345a ;
+  }
+  .bg3{
+    background-color:#31343d ;
+  }
+  .bg4{
+    background-color:#72a8ba ;
+  }
+  
