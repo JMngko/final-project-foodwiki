@@ -120,7 +120,7 @@ const Rating = () => {
                 <p className="card-text">
                   <i
                     className="fa-solid fa-star m-1"
-                    style={{ color: `gold` }}
+                    style={{ color: `green` }}
                   ></i>
                   {data && data.data.rating}
                 </p>
@@ -226,7 +226,7 @@ const Rating = () => {
                 >
                   <li className="bg1 list-group-item d-flex justify-content-between align-items-start food-card shadow">
                     <img
-                      src={r.user.profilePictureUrl}
+                      src={r.user.profilePicture}
                       className="img-fluid"
                       style={{
                         borderRadius: `50%`,
@@ -244,7 +244,7 @@ const Rating = () => {
                     <span className="badge bg-dark  border rounded-pill">
                       <i
                         className="fa-solid fa-star m-1"
-                        style={{ color: `gold` }}
+                        style={{ color: `green` }}
                       ></i>
                       {r.rating}
                     </span>

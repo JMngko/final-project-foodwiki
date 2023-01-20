@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import Carousel from "./Carousel";
 
 const Home = () => {
   const [data, setData] = useState();
@@ -71,12 +70,8 @@ const Home = () => {
 
   return (
     <>
-      {/* <Carousel /> */}
       <section>
         <div className="container-md">
-          <h1 className="text-dark text-center mt-4 fw-bolder">
-            <span className="color1">Food Wiki</span>
-          </h1>
           <div className="row row-cols-1 row-cols-md-4 g-4 mt-1 mb-5">
             {data &&
               data.data.map((r) => {
@@ -107,15 +102,16 @@ const Home = () => {
                               style={{ color: `gold` }}
                             ></i>
                           </Link>
-                          {r.rating} Rating
+                          {r.rating} Rating 
                         </small>
+                        <br></br>
                         <small className="tc1">
                           <i
                             className="fa-solid fa-heart m-1"
                             style={{ color: `${r.isLike ? "red" : ""}` }}
                             onClick={() => handleLike(r.id, r.isLike)}
                           ></i>
-                          {r.totalLikes}
+                          {r.totalLikes} Likes
                         </small>
                       </div>
                     </div>

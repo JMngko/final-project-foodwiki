@@ -1,5 +1,5 @@
 * {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   
   .color1 {
@@ -16,16 +16,6 @@
   
   .bgcolor2 {
     background: #ffb30e;
-  }
-  
-  .card-user {
-    overflow: hidden;
-  }
-  
-  .user-card-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
   }
   
   .user-card-image1 {
@@ -45,8 +35,6 @@
   }
   
   .food-card-image {
-    border-radius: 50%;
-    border-top-right-radius: 50%;
     width: 150px;
     height: 150px;
     border: 3px solid #ea345a;
@@ -56,22 +44,8 @@
   .food-card {
     background-color: #fefaf1;
   }
-  
-  .carousel-item {
-    height: 34rem;
-    position: relative;
-    background: #202439;
-    background-position: center;
-    background-size: cover;
-  }
 
-  /* tambahan */
-  .bg-addfood{
-    background-color: #FFEEDD;
-  }
-  .bg-alluser{
-    background-color: #434242;
-  }
+  /* Addition */
   .tc1{
     color: #ffffff;
   }

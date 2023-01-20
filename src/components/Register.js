@@ -14,7 +14,7 @@ const onSubmit = (values, { resetForm }) => {
       password: values.password,
       passwordRepeat: values.passwordRepeat,
       role: values.role,
-      profilePictureUrl: values.profilePictureUrl,
+      profilePicture: values.profilePicture,
       phoneNumber: values.phoneNumber,
     },
     headers: {
@@ -63,39 +63,38 @@ const Register = () => {
     <section>
       <Formik
         initialValues={{
-          name: "",
-          email: "",
-          password: "",
-          passwordRepeat: "",
-          role: "",
-          profilePictureUrl: "",
-          phoneNumber: "",
+          name: "", email: "", password: "", passwordRepeat: "", role: "", profilePicture: "", phoneNumber: "",
         }}
         validationSchema={Yup.object({
           name: Yup.string()
-            .min(6, "Must be 6 characters or more")
+            .min(8, "Must be 8 characters or more")
             .max(20, "Must be 20 characters or less")
             .required("Required"),
+
           email: Yup.string()
-            .email("Invalid email address")
+            .email("Invalid email")
             .required("Required"),
+
           password: Yup.string()
             .min(8, "Must be 8 characters or more")
             .max(20, "Must be 20 characters or less")
             .matches(
               /^.*(?=.*\d)((?=.*[a-zA-Z]){1}).*$/,
-              "Password must contain atleast one letter and one number"
+              "Password must contain number or letter"
             )
             .required("Required"),
           passwordRepeat: Yup.string()
-            .oneOf([Yup.ref("password")], "Passwords does not match")
+            .oneOf([Yup.ref("password")], "Passwords isn't match")
             .required("Required"),
+
           role: Yup.string()
-            .oneOf(["general"], "Invalid Job Type")
+            .oneOf(["general"], "Invalid Role")
             .required("Required"),
-          profilePictureUrl: Yup.string().required("Required"),
+
+          profilePicture: Yup.string().required("Required"),
+
           phoneNumber: Yup.string()
-            .min(10, "Must be 10 characters or more")
+            .min(8, "Must be 10 characters or more")
             .max(12, "Must be 12 characters or less")
             .matches(/^[0-9]{10,12}$/, "Must be in digit")
             .required("Required"),
@@ -123,50 +122,26 @@ const Register = () => {
               </div>
               <Form>
                 <TextInput
-                  label="Name"
-                  name="name"
-                  type="text"
-                  placeholder="Username"
+                  label="Name" name="name" type="text" placeholder="Username"
                 />
-
                 <TextInput
-                  label="Email Address"
-                  name="email"
-                  type="email"
-                  placeholder="Email Address"
+                  label="Email Address" name="email" type="email" placeholder="Email Address"
                 />
-
                 <TextInput
-                  label="Password"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
+                  label="Password" name="password" type="password" placeholder="Password"
                 />
-
                 <TextInput
-                  label="Confirm Password"
-                  name="passwordRepeat"
-                  type="password"
-                  placeholder="Confirm Password"
+                  label="Confirm Password" name="passwordRepeat" type="password" placeholder="Confirm Password"
                 />
-
                 <Select label="Role" name="role">
                   <option value="">Select a Role</option>
                   <option value="general">General</option>
                 </Select>
-
                 <TextInput
-                  label="Profile Picture URL"
-                  name="profilePictureUrl"
-                  type="url"
-                  placeholder="Profile Picture URL"
+                  label="Profile Picture" name="profilePicture" type="url" placeholder="Profile Picture URL"
                 />
-
                 <TextInput
-                  label="Phone Number"
-                  name="phoneNumber"
-                  type="tel"
-                  placeholder="Phone Number"
+                  label="Phone Number" name="phoneNumber" type="tel" placeholder="Phone Number"
                 />
                 <div className="text-center ">
                   <button
