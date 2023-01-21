@@ -101,12 +101,12 @@ const Register = () => {
         })}
         onSubmit={onSubmit}
       >
-        <div className="container-md mb-3">
-          <div className="row justify-content-center align-items-center">
+        <div className="container login-border">
+          <div className="login">
             <div className="bg1 col-md-4 border rounded p-4 shadow">
               <div className="text-center">
               <h1 className="text-dark text-center mt-4 fw-bolder">
-                <span className="color1">Register</span>
+                <span className="log-title color1 lt-1">REGISTER</span>
               </h1>
                 <p>
                   Already have an account?
@@ -114,7 +114,7 @@ const Register = () => {
                     <div>
                   <button
                     type="submit"
-                    className="btn bg4 text-light btn-dark shadow"
+                    className="btn bg4 text-light btn-dark log-button bg1"
                   > Login </button>
                   </div>
                   </Link>
@@ -122,31 +122,45 @@ const Register = () => {
               </div>
               <Form>
                 <TextInput
-                  label="Name" name="name" type="text" placeholder="Username"
+                  className="input-form" label="Name" name="name" type="text" placeholder="Username"
                 />
+                <br></br>
+
                 <TextInput
-                  label="Email Address" name="email" type="email" placeholder="Email Address"
+                  className="input-form" label="Email Address" name="email" type="email" placeholder="Email Address"
                 />
+                <br></br>
+
                 <TextInput
-                  label="Password" name="password" type="password" placeholder="Password"
+                  className="input-form" label="Password" name="password" type="password" placeholder="Password"
                 />
+                <br></br>
+
                 <TextInput
-                  label="Confirm Password" name="passwordRepeat" type="password" placeholder="Confirm Password"
+                  className="input-form" label="Confirm Password" name="passwordRepeat" type="password" placeholder="Confirm Password"
                 />
-                <Select label="Role" name="role">
+                <br></br>
+
+                <Select className="input-form" label="Role" name="role">
                   <option value="">Select a Role</option>
                   <option value="general">General</option>
                 </Select>
+                <br></br>
+
                 <TextInput
-                  label="Profile Picture" name="profilePicture" type="url" placeholder="Profile Picture URL"
+                  className="input-form" label="Profile Picture" name="profilePicture" type="url" placeholder="Profile Picture URL"
                 />
+                <br></br>
+
                 <TextInput
-                  label="Phone Number" name="phoneNumber" type="tel" placeholder="Phone Number"
+                  className="input-form" label="Phone Number" name="phoneNumber" type="tel" placeholder="Phone Number"
                 />
+                <br></br>
+
                 <div className="text-center ">
                   <button
                     type="submit"
-                    className="btn bg4 text-light btn-dark shadow"
+                    className="btn bg4 text-light btn-dark log-button"
                   >
                     Submit
                   </button>

@@ -58,41 +58,39 @@ const Login = () => {
         })}
         onSubmit={onSubmit}
       >
-        <div className="login-border">
+        <div className="container login-border">
           <div className="login">
             <div className="bg1 col-md-4 border rounded p-4 shadow">
               <div className="text-center">
-              <h1 className="text-dark text-center mt-4 fw-bolder">
-                <span className="color1 lt-1">Log-In</span>
+              <h1 className="text-dark text-center mt-4 fw-bolder ">
+                <span className="log-title color1 lt-1">LOG IN</span>
               </h1>
                 <p>
-                  Don't have an account?
+                  Don't have account?
                   <Link className="text-decoration-none m-1 color2" to="/Register">
                   <div>
-                    <button type="submit" className="btn bg4 text-light btn-dark shadow"> Register</button>
+                  <br></br>
+                    <button type="submit" className="btn text-light log-button bg1"> REGISTER</button>
                   </div>
                   </Link>
                 </p>
               </div>
+              <br></br>
+
               <Form>
                 <TextInput
-                  label="Email Address"
-                  name="email"
-                  type="email"
-                  placeholder="Email Address"
+                  className="input-form" label="Email Address" name="email" type="email" placeholder="Email Address"
                 />
+                <br></br>
 
                 <TextInput
-                  label="Password"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
+                  className="input-form" label="Password" name="password"  type="password" placeholder="Password"
                 />
-
+                <br></br>
+                
                 <div className="text-center">
                   <button
-                    type="submit"
-                    className="btn bg4 text-light btn-dark shadow"
+                    type="submit" className="btn text-light log-button bg1"
                   >
                     Submit
                   </button>

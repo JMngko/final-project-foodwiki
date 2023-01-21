@@ -1,0 +1,168 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .color1 {
+    color: green;
+  }
+  
+  .color2 {
+    color: whitesmoke;
+  }
+  
+  .bgcolor1 {
+    background: black;
+  }
+  
+  .bgcolor2 {
+    background: green;
+  }
+  
+  nav {
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0);
+    position: sticky;
+    list-style-type: none;
+    background-color: whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar-logo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  .login {
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .log-title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 41px;
+  }
+
+  .container {
+    padding: 48px 24px;
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .login-border {
+    border: 1px solid white(98, 62, 18);
+    border-radius: 1rem;
+  }
+
+  .form {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .log-button {
+    padding: 16px 24px;
+    width: 352px;
+    height: 54px;
+    border-radius: 8px;
+  }
+
+  .input-form {
+    padding: 15px 20px;
+    width: 310px;
+    height: 40px;
+    
+    /* White */
+    background: #FFFFFF;
+
+    border: 1.5px solid black;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* White/White 30 - #B3B3B3 */
+    color: black;
+  }
+
+  .lt-1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .food-card-image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ea345a;
+    background-color: white;
+  }
+  
+  .food-card {
+    background-color: green;
+  }
+
+  .ver{
+    list-style-type: none;
+    background-color: whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .items{
+      margin-right: 20px;
+      font-size: 20px;
+      color: green;
+      cursor: pointer;
+  }
+
+  h1 {
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    color: green;
+  }
+
+  /* Addition */
+  .tc1{
+    color: #ffffff;
+  }
+  .nob{
+    border: 0px;
+  }
+  .bg1{
+    background-color:whitesmoke ;
+  }
+  .bg2{
+    background-color:#ea345a ;
+  }
+  .bg3{
+    background-color:green ;
+  }
+  .bg4{
+    background-color:green ;
+  }
+  

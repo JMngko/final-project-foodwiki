@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Home from "./components/Home";
@@ -14,7 +14,7 @@ function App() {
       path: "/",
       element: (
         <>
-          <NavBar />
+          <Navbar />
           <Outlet />
         </>
       ),
