@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import Navigation from "./components/Navigation";
+import NavBar from "./components/NavBar";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Home from "./components/Home";
@@ -14,7 +14,7 @@ function App() {
       path: "/",
       element: (
         <>
-          <Navigation />
+          <NavBar />
           <Outlet />
         </>
       ),
@@ -28,22 +28,6 @@ function App() {
           path: "/Register",
           element: <Register />,
         },
-        // {
-        //   path: "/profile",
-        //   element: <Profile />,
-        // },
-        // {
-        //   path: "/alluser",
-        //   element: <Alluser />,
-        // },
-        // {
-        //   path: "/myfavorite",
-        //   element: <MyFavorite />,
-        // },
-        // {
-        //   path: "/foodedit",
-        //   element: <FoodEdit />,
-        // },
         {
           path: "/rating/:foodID",
           element: <Rating />,
